@@ -25,13 +25,16 @@ builder.Services.AddScoped<IWaveService, WaveService>();
 
 var app = builder.Build();
 
+
+// Global exception handling
+app.UseMiddleware<ExceptionHandlingMiddleware>();
+
 app.UseSwagger();
 app.UseSwaggerUI();
 
 
 
-// Global exception handling
-app.UseMiddleware<ExceptionHandlingMiddleware>();
+
 
 app.UseHttpsRedirection();
 

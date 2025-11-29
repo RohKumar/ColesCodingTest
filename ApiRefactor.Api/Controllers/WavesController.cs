@@ -29,4 +29,10 @@ public class WavesController : ControllerBase
         await _service.UpsertAsync(wave, ct);
         return NoContent();
     }
+
+    // Uncomment to test exception handling middleware
+    //public IActionResult Get()
+    //{
+    //    throw new InvalidOperationException("Boom");
+    //}
 }
