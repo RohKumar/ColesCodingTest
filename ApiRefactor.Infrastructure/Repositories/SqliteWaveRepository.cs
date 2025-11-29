@@ -25,7 +25,7 @@ public class SqliteWaveRepository : IWaveRepository
             var id = reader.GetGuid(reader.GetOrdinal("id"));
             var name = reader.IsDBNull(reader.GetOrdinal("name")) ? string.Empty : reader.GetString(reader.GetOrdinal("name"));
             var waveDateText = reader.GetString(reader.GetOrdinal("wavedate"));
-            var waveDate = DateTime.Parse(waveDateText, CultureInfo.InvariantCulture, DateTimeStyles.AssumeUniversal | DateTimeStyles.AdjustToUniversal);
+            var waveDate = DateTime.Now;
 
             result.Add(new Wave
             {
