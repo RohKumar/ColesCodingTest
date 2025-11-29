@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs
+/ApiRefactor.Application/bin/Debug/net9.0
+/ApiRefactor.Domain/bin/Debug/net9.0
+/ApiRefactor.Infrastructure/bin/Debug/net9.0
