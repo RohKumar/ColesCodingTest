@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/Build/" />
+  <Folder Name="/Build/scripts/" />
+  <Folder Name="/Docs/">
+    <File Path="Note.txt" />
+  </Folder>
+  <Folder Name="/Docs/architecture-diagrams/" />
+  <Folder Name="/src/">
+    <Project Path="ApiRefactor.Api/ApiRefactor.Api.csproj" />
+    <Project Path="ApiRefactor.Application/ApiRefactor.Application.csproj" />
+    <Project Path="ApiRefactor.Domain/ApiRefactor.Domain.csproj" />
+    <Project Path="ApiRefactor.Infrastructure/ApiRefactor.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Tests/">
+    <Project Path="ApiRefactor.Tests/ApiRefactor.Tests.csproj" />
+  </Folder>
+</Solution>

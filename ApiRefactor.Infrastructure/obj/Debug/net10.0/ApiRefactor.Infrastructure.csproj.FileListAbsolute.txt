@@ -1,0 +1,11 @@
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Infrastructure\bin\Debug\net10.0\ApiRefactor.Infrastructure.deps.json
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Infrastructure\bin\Debug\net10.0\ApiRefactor.Infrastructure.dll
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Infrastructure\bin\Debug\net10.0\ApiRefactor.Infrastructure.pdb
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Infrastructure\obj\Debug\net10.0\ApiRefactor.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Infrastructure\obj\Debug\net10.0\ApiRefactor.Infrastructure.AssemblyInfoInputs.cache
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Infrastructure\obj\Debug\net10.0\ApiRefactor.Infrastructure.AssemblyInfo.cs
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Infrastructure\obj\Debug\net10.0\ApiRefactor.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Infrastructure\obj\Debug\net10.0\ApiRefactor.Infrastructure.dll
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Infrastructure\obj\Debug\net10.0\refint\ApiRefactor.Infrastructure.dll
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Infrastructure\obj\Debug\net10.0\ApiRefactor.Infrastructure.pdb
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Infrastructure\obj\Debug\net10.0\ref\ApiRefactor.Infrastructure.dll

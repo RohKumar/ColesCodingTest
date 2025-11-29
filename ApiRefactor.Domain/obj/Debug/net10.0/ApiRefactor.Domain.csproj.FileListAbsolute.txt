@@ -1,0 +1,11 @@
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Domain\bin\Debug\net10.0\ApiRefactor.Domain.deps.json
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Domain\bin\Debug\net10.0\ApiRefactor.Domain.dll
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Domain\bin\Debug\net10.0\ApiRefactor.Domain.pdb
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Domain\obj\Debug\net10.0\ApiRefactor.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Domain\obj\Debug\net10.0\ApiRefactor.Domain.AssemblyInfoInputs.cache
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Domain\obj\Debug\net10.0\ApiRefactor.Domain.AssemblyInfo.cs
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Domain\obj\Debug\net10.0\ApiRefactor.Domain.csproj.CoreCompileInputs.cache
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Domain\obj\Debug\net10.0\ApiRefactor.Domain.dll
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Domain\obj\Debug\net10.0\refint\ApiRefactor.Domain.dll
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Domain\obj\Debug\net10.0\ApiRefactor.Domain.pdb
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Domain\obj\Debug\net10.0\ref\ApiRefactor.Domain.dll
