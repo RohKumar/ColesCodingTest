@@ -1,11 +1,3 @@
-C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Api\obj\Debug\net9.0\ApiRefactor.Api.csproj.AssemblyReference.cache
-C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Api\obj\Debug\net9.0\rpswa.dswa.cache.json
-C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Api\obj\Debug\net9.0\ApiRefactor.Api.GeneratedMSBuildEditorConfig.editorconfig
-C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Api\obj\Debug\net9.0\ApiRefactor.Api.AssemblyInfoInputs.cache
-C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Api\obj\Debug\net9.0\ApiRefactor.Api.AssemblyInfo.cs
-C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Api\obj\Debug\net9.0\ApiRefactor.Api.csproj.CoreCompileInputs.cache
-C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Api\obj\Debug\net9.0\ApiRefactor.Api.MvcApplicationPartsAssemblyInfo.cs
-C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Api\obj\Debug\net9.0\ApiRefactor.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Api\bin\Debug\net9.0\appsettings.Development.json
 C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Api\bin\Debug\net9.0\appsettings.json
 C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Api\bin\Debug\net9.0\ApiRefactor.Api.staticwebassets.endpoints.json
@@ -51,6 +43,14 @@ C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-
 C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Api\bin\Debug\net9.0\ApiRefactor.Application.pdb
 C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Api\bin\Debug\net9.0\ApiRefactor.Domain.pdb
 C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Api\bin\Debug\net9.0\ApiRefactor.Infrastructure.pdb
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Api\obj\Debug\net9.0\ApiRefactor.Api.csproj.AssemblyReference.cache
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Api\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Api\obj\Debug\net9.0\ApiRefactor.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Api\obj\Debug\net9.0\ApiRefactor.Api.AssemblyInfoInputs.cache
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Api\obj\Debug\net9.0\ApiRefactor.Api.AssemblyInfo.cs
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Api\obj\Debug\net9.0\ApiRefactor.Api.csproj.CoreCompileInputs.cache
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Api\obj\Debug\net9.0\ApiRefactor.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Api\obj\Debug\net9.0\ApiRefactor.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Api\obj\Debug\net9.0\rjimswa.dswa.cache.json
 C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Api\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Api\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json

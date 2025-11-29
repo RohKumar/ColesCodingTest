@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiRefactor.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95beed9cb2a7fb11e8c047b268811d8dd80816b4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9c8c57a0ae4a48476e417825cb4453eecef2853")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiRefactor.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiRefactor.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

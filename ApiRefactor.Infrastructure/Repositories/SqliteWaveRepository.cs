@@ -22,14 +22,15 @@ public class SqliteWaveRepository : IWaveRepository
         using var reader = await cmd.ExecuteReaderAsync(ct);
         while (await reader.ReadAsync(ct))
         {
-            var ord = reader.GetOrdinal("wavedate");
-            DateTime waveDate = DateTime.Now;
-           
+            var id = reader.GetGuid(reader.GetOrdinal("id"));
+            var name = reader.IsDBNull(reader.GetOrdinal("name")) ? string.Empty : reader.GetString(reader.GetOrdinal("name"));
+            var waveDateText = reader.GetString(reader.GetOrdinal("wavedate"));
+            var waveDate = DateTime.Parse(waveDateText, CultureInfo.InvariantCulture, DateTimeStyles.AssumeUniversal | DateTimeStyles.AdjustToUniversal);
 
             result.Add(new Wave
             {
-                Id = reader.GetGuid(reader.GetOrdinal("id")),
-                Name = reader.IsDBNull(reader.GetOrdinal("name")) ? string.Empty : reader.GetString(reader.GetOrdinal("name")),
+                Id = id,
+                Name = name,
                 WaveDate = waveDate
             });
         }
@@ -48,13 +49,14 @@ public class SqliteWaveRepository : IWaveRepository
         using var reader = await cmd.ExecuteReaderAsync(ct);
         if (await reader.ReadAsync(ct))
         {
-            var ord = reader.GetOrdinal("wavedate");
-            var waveDate = DateTime.Parse(reader["wavedate"].ToString());
+            var name = reader.IsDBNull(reader.GetOrdinal("name")) ? string.Empty : reader.GetString(reader.GetOrdinal("name"));
+            var waveDateText = reader.GetString(reader.GetOrdinal("wavedate"));
+            var waveDate = DateTime.Parse(waveDateText, CultureInfo.InvariantCulture, DateTimeStyles.AssumeUniversal | DateTimeStyles.AdjustToUniversal);
 
             return new Wave
             {
                 Id = reader.GetGuid(reader.GetOrdinal("id")),
-                Name = reader.IsDBNull(reader.GetOrdinal("name")) ? string.Empty : reader.GetString(reader.GetOrdinal("name")),
+                Name = name,
                 WaveDate = waveDate
             };
         }
@@ -71,7 +73,7 @@ public class SqliteWaveRepository : IWaveRepository
         update.CommandText = "UPDATE waves SET name = $name, wavedate = $wavedate WHERE id = $id";
         update.Parameters.AddWithValue("$id", wave.Id);
         update.Parameters.AddWithValue("$name", wave.Name ?? string.Empty);
-        update.Parameters.AddWithValue("$wavedate", wave.WaveDate);
+        update.Parameters.AddWithValue("$wavedate", wave.WaveDate.ToString("yyyy-MM-dd HH:mm:ss.fffffff", CultureInfo.InvariantCulture));
         var updated = await update.ExecuteNonQueryAsync(ct);
 
         if (updated == 0)
@@ -80,7 +82,7 @@ public class SqliteWaveRepository : IWaveRepository
             insert.CommandText = "INSERT INTO waves (id, name, wavedate) VALUES ($id, $name, $wavedate)";
             insert.Parameters.AddWithValue("$id", wave.Id);
             insert.Parameters.AddWithValue("$name", wave.Name ?? string.Empty);
-            insert.Parameters.AddWithValue("$wavedate", wave.WaveDate);
+            insert.Parameters.AddWithValue("$wavedate", wave.WaveDate.ToString("yyyy-MM-dd HH:mm:ss.fffffff", CultureInfo.InvariantCulture));
             await insert.ExecuteNonQueryAsync(ct);
         }
     }
