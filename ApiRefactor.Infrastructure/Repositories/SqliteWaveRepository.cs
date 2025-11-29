@@ -1,6 +1,6 @@
-
 using ApiRefactor.Domain;
 using Microsoft.Data.Sqlite;
+using System.Globalization;
 
 namespace ApiRefactor.Infrastructure;
 
@@ -22,11 +22,15 @@ public class SqliteWaveRepository : IWaveRepository
         using var reader = await cmd.ExecuteReaderAsync(ct);
         while (await reader.ReadAsync(ct))
         {
+            var ord = reader.GetOrdinal("wavedate");
+            DateTime waveDate = DateTime.Now;
+           
+
             result.Add(new Wave
             {
                 Id = reader.GetGuid(reader.GetOrdinal("id")),
                 Name = reader.IsDBNull(reader.GetOrdinal("name")) ? string.Empty : reader.GetString(reader.GetOrdinal("name")),
-                WaveDate = reader.GetDateTime(reader.GetOrdinal("wavedate"))
+                WaveDate = waveDate
             });
         }
         return result;
@@ -44,11 +48,14 @@ public class SqliteWaveRepository : IWaveRepository
         using var reader = await cmd.ExecuteReaderAsync(ct);
         if (await reader.ReadAsync(ct))
         {
+            var ord = reader.GetOrdinal("wavedate");
+            var waveDate = DateTime.Parse(reader["wavedate"].ToString());
+
             return new Wave
             {
                 Id = reader.GetGuid(reader.GetOrdinal("id")),
                 Name = reader.IsDBNull(reader.GetOrdinal("name")) ? string.Empty : reader.GetString(reader.GetOrdinal("name")),
-                WaveDate = reader.GetDateTime(reader.GetOrdinal("wavedate"))
+                WaveDate = waveDate
             };
         }
         return null;

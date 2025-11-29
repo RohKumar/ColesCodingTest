@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiRefactor.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+026fe84236a170e773c2c127d5a3e10ed9d4f18f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95beed9cb2a7fb11e8c047b268811d8dd80816b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiRefactor.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiRefactor.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

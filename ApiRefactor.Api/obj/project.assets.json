@@ -284,6 +284,44 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "ApiRefactor.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "ApiRefactor.Domain": "1.0.0",
+          "ApiRefactor.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ApiRefactor.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApiRefactor.Application.dll": {}
+        }
+      },
+      "ApiRefactor.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/ApiRefactor.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApiRefactor.Domain.dll": {}
+        }
+      },
+      "ApiRefactor.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "ApiRefactor.Domain": "1.0.0",
+          "Microsoft.Data.Sqlite": "9.0.3"
+        },
+        "compile": {
+          "bin/placeholder/ApiRefactor.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApiRefactor.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -781,10 +819,27 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "ApiRefactor.Application/1.0.0": {
+      "type": "project",
+      "path": "../ApiRefactor.Application/ApiRefactor.Application.csproj",
+      "msbuildProject": "../ApiRefactor.Application/ApiRefactor.Application.csproj"
+    },
+    "ApiRefactor.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ApiRefactor.Domain/ApiRefactor.Domain.csproj",
+      "msbuildProject": "../ApiRefactor.Domain/ApiRefactor.Domain.csproj"
+    },
+    "ApiRefactor.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../ApiRefactor.Infrastructure/ApiRefactor.Infrastructure.csproj",
+      "msbuildProject": "../ApiRefactor.Infrastructure/ApiRefactor.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "ApiRefactor.Application >= 1.0.0",
+      "ApiRefactor.Domain >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 9.0.3",
       "Microsoft.Data.Sqlite >= 9.0.3",
       "Swashbuckle.AspNetCore >= 7.3.1"
@@ -822,7 +877,14 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Resume\\Latest TelstrSuper Resume\\Personal\\Personal\\Personal\\Coles\\2025-11-30-Rohit-Singh-main\\ApiRefactor.Solution\\ApiRefactor.Application\\ApiRefactor.Application.csproj": {
+              "projectPath": "C:\\Resume\\Latest TelstrSuper Resume\\Personal\\Personal\\Personal\\Coles\\2025-11-30-Rohit-Singh-main\\ApiRefactor.Solution\\ApiRefactor.Application\\ApiRefactor.Application.csproj"
+            },
+            "C:\\Resume\\Latest TelstrSuper Resume\\Personal\\Personal\\Personal\\Coles\\2025-11-30-Rohit-Singh-main\\ApiRefactor.Solution\\ApiRefactor.Domain\\ApiRefactor.Domain.csproj": {
+              "projectPath": "C:\\Resume\\Latest TelstrSuper Resume\\Personal\\Personal\\Personal\\Coles\\2025-11-30-Rohit-Singh-main\\ApiRefactor.Solution\\ApiRefactor.Domain\\ApiRefactor.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

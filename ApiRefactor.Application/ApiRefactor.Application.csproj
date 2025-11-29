@@ -16,4 +16,9 @@
     <Folder Include="Services\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ApiRefactor.Domain\ApiRefactor.Domain.csproj" />
+    <ProjectReference Include="..\ApiRefactor.Infrastructure\ApiRefactor.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

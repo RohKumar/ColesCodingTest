@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiRefactor.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c92be1671af419a8cae0d60cda55b82b40c16fc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95beed9cb2a7fb11e8c047b268811d8dd80816b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiRefactor.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiRefactor.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

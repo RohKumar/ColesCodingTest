@@ -8,6 +8,8 @@
     ".NETCoreApp,Version=v9.0": {
       "ApiRefactor.Api/1.0.0": {
         "dependencies": {
+          "ApiRefactor.Application": "1.0.0",
+          "ApiRefactor.Domain": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "9.0.3",
           "Microsoft.Data.Sqlite": "9.0.3",
           "Swashbuckle.AspNetCore": "7.3.1"
@@ -229,6 +231,38 @@
             "fileVersion": "7.3.1.1111"
           }
         }
+      },
+      "ApiRefactor.Application/1.0.0": {
+        "dependencies": {
+          "ApiRefactor.Domain": "1.0.0",
+          "ApiRefactor.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "ApiRefactor.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ApiRefactor.Domain/1.0.0": {
+        "runtime": {
+          "ApiRefactor.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ApiRefactor.Infrastructure/1.0.0": {
+        "dependencies": {
+          "ApiRefactor.Domain": "1.0.0",
+          "Microsoft.Data.Sqlite": "9.0.3"
+        },
+        "runtime": {
+          "ApiRefactor.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -321,6 +355,21 @@
       "sha512": "sha512-hs6C+lmNEzipOA1WPQpIaGvvoXjUbnoevbv6l7o9ZQE8SNF8ggjOmK6NB6cYdMcEvk0uBeKl4Qq/BnRt5MFVqg==",
       "path": "swashbuckle.aspnetcore.swaggerui/7.3.1",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.7.3.1.nupkg.sha512"
+    },
+    "ApiRefactor.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ApiRefactor.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ApiRefactor.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

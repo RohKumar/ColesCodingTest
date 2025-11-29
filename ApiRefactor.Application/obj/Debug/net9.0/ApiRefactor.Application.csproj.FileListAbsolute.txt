@@ -1,10 +1,16 @@
 C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Application\bin\Debug\net9.0\ApiRefactor.Application.deps.json
 C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Application\bin\Debug\net9.0\ApiRefactor.Application.dll
 C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Application\bin\Debug\net9.0\ApiRefactor.Application.pdb
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Application\bin\Debug\net9.0\ApiRefactor.Domain.dll
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Application\bin\Debug\net9.0\ApiRefactor.Infrastructure.dll
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Application\bin\Debug\net9.0\ApiRefactor.Domain.pdb
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Application\bin\Debug\net9.0\ApiRefactor.Infrastructure.pdb
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Application\obj\Debug\net9.0\ApiRefactor.Application.csproj.AssemblyReference.cache
 C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Application\obj\Debug\net9.0\ApiRefactor.Application.GeneratedMSBuildEditorConfig.editorconfig
 C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Application\obj\Debug\net9.0\ApiRefactor.Application.AssemblyInfoInputs.cache
 C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Application\obj\Debug\net9.0\ApiRefactor.Application.AssemblyInfo.cs
 C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Application\obj\Debug\net9.0\ApiRefactor.Application.csproj.CoreCompileInputs.cache
+C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Application\obj\Debug\net9.0\ApiRefac.7305BD94.Up2Date
 C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Application\obj\Debug\net9.0\ApiRefactor.Application.dll
 C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Application\obj\Debug\net9.0\refint\ApiRefactor.Application.dll
 C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Application\obj\Debug\net9.0\ApiRefactor.Application.pdb

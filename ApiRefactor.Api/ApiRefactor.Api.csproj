@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Infrastructure\Repositories\ExceptionHandlingMiddleware.cs" Link="ExceptionHandlingMiddleware.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.3" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="7.3.1" />
@@ -24,5 +20,10 @@
     <None Include="App_Data\waves.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApiRefactor.Application\ApiRefactor.Application.csproj" />
+    <ProjectReference Include="..\ApiRefactor.Domain\ApiRefactor.Domain.csproj" />
   </ItemGroup>
 </Project>
