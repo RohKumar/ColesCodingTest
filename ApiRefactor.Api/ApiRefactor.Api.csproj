@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="C:\Resume\Latest TelstrSuper Resume\Personal\Personal\Personal\Coles\2025-11-30-Rohit-Singh-main\ApiRefactor.Solution\ApiRefactor.Infrastructure\Repositories\ExceptionHandlingMiddleware.cs" Link="ExceptionHandlingMiddleware.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.3" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="7.3.1" />

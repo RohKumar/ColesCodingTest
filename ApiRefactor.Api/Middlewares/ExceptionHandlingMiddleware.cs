@@ -1,4 +1,4 @@
-// file: ApiRefactor.Api/Middlewares/ExceptionHandlingMiddleware.cs
+
 using System.Net;
 using System.Text.Json;
 using Microsoft.AspNetCore.Http;
