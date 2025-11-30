@@ -2,9 +2,14 @@ using Microsoft.Data.Sqlite;
 using ApiRefactor.Tests.Support;
 
 namespace ApiRefactor.Tests.Support;
-
+/// <summary>
+/// Provides methods for ensuring the database schema is created.
+/// </summary>
 public static class SchemaHelper
-{
+{   /// <summary>
+    /// Ensures the database schema is created.
+    /// </summary>
+    /// <param name="factory">The SQLite connection factory.</param>
     public static async Task EnsureSchemaAsync(InMemorySqliteConnectionFactory factory)
     {
         using var conn = (SqliteConnection)factory.Create();

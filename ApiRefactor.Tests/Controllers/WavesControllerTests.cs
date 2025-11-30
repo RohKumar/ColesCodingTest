@@ -9,13 +9,18 @@ using ApiRefactor.Application;
 namespace ApiRefactor.Tests.Controllers;
 
 [TestFixture]
-public class WavesControllerTests
+/// <summary>
+/// Tests for the WavesController class.
+/// </summary>
+public class WaveControllerTests
 {
     private InMemorySqliteConnectionFactory _factory = default!;
     private SqliteWaveRepository _repo = default!;
-    private WavesController _controller = default!;
+    private WaveController _controller = default!;
     private IWaveService _service = default!;
-
+    /// <summary>
+    /// Initializes the test environment.
+    /// </summary>
     [SetUp]
     public async Task SetUp()
     {
@@ -23,10 +28,12 @@ public class WavesControllerTests
         _factory = new InMemorySqliteConnectionFactory("Data Source=waves_db;Mode=Memory;Cache=Shared");
         await SchemaHelper.EnsureSchemaAsync(_factory);
         _repo = new SqliteWaveRepository(_factory);
-        _service = new WaveService(_repo); // Assuming WaveService implements IWaveService and takes IWaveRepository
-        _controller = new WavesController(_service);
+        _service = new WaveService(_repo); 
+        _controller = new WaveController(_service);
     }
-
+    /// <summary>
+    /// Cleans up the test environment.
+    /// </summary>
     [TearDown]
     public void TearDown()
     {
@@ -35,7 +42,9 @@ public class WavesControllerTests
             disposable.Dispose();
         }
     }
-
+    /// <summary>
+    /// Tests the GetAll method of the WavesController.
+    /// </summary>
     [Test]
     public async Task GetAll_ReturnsOk_WithCollection()
     {
@@ -45,7 +54,7 @@ public class WavesControllerTests
         var actionResult = await _controller.GetAll(CancellationToken.None);
         Assert.That(actionResult.Result, Is.TypeOf<OkObjectResult>());
         var ok = (OkObjectResult)actionResult.Result!;
-        var waves = (IEnumerable<Wave>)ok.Value!;
-        Assert.That(waves.Count(), Is.EqualTo(2));
+        var wavesEnvelope = (Waves)ok.Value!;
+        Assert.That(wavesEnvelope.Items.Count, Is.EqualTo(2));
     }
 }

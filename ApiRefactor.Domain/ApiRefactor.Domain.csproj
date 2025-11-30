@@ -10,8 +10,6 @@
     <Folder Include="Configuration\" />
     <Folder Include="Entities\" />
     <Folder Include="Common\" />
-    <Folder Include="WebApi\Response\" />
-    <Folder Include="WebApi\Requests\" />
   </ItemGroup>
 
 </Project>

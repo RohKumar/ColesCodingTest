@@ -3,24 +3,30 @@ using Microsoft.Data.Sqlite;
 using System.Globalization;
 
 namespace ApiRefactor.Infrastructure;
-
+/// <summary>
+/// Implements <see cref="IWaveRepository"/> for SQLite.
+/// </summary>
 public class SqliteWaveRepository : IWaveRepository
 {
     private readonly ISqlConnectionFactory _factory;
 
     public SqliteWaveRepository(ISqlConnectionFactory factory) => _factory = factory;
-
-    public async Task<IEnumerable<Wave>> GetAllAsync(CancellationToken ct = default)
+    /// <summary>
+    /// Retrieves all wave entities from the database.
+    /// </summary>
+    /// <param name="cancellationToken"></param>
+    /// <returns></returns>
+    public async Task<IEnumerable<Wave>> GetAllAsync(CancellationToken cancellationToken = default)
     {
         using var connection = _factory.Create();
-        await connection.OpenAsync(ct);
+        await connection.OpenAsync(cancellationToken);
 
         using var cmd = connection.CreateCommand();
         cmd.CommandText = "SELECT id, name, wavedate FROM waves";
         var result = new List<Wave>();
 
-        using var reader = await cmd.ExecuteReaderAsync(ct);
-        while (await reader.ReadAsync(ct))
+        using var reader = await cmd.ExecuteReaderAsync(cancellationToken);
+        while (await reader.ReadAsync(cancellationToken))
         {
             var id = reader.GetGuid(reader.GetOrdinal("id"));
             var name = reader.IsDBNull(reader.GetOrdinal("name")) ? string.Empty : reader.GetString(reader.GetOrdinal("name"));
@@ -36,18 +42,23 @@ public class SqliteWaveRepository : IWaveRepository
         }
         return result;
     }
-
-    public async Task<Wave?> GetByIdAsync(Guid id, CancellationToken ct = default)
+    /// <summary>
+    /// Retrieves a wave entity by its unique identifier.
+    /// </summary>
+    /// <param name="id"></param>
+    /// <param name="cancellationToken"></param>
+    /// <returns></returns>
+    public async Task<Wave?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default)
     {
         using var connection = _factory.Create();
-        await connection.OpenAsync(ct);
+        await connection.OpenAsync(cancellationToken);
 
         using var cmd = connection.CreateCommand();
         cmd.CommandText = "SELECT id, name, wavedate FROM waves WHERE id = $id";
         cmd.Parameters.AddWithValue("$id", id);
 
-        using var reader = await cmd.ExecuteReaderAsync(ct);
-        if (await reader.ReadAsync(ct))
+        using var reader = await cmd.ExecuteReaderAsync(cancellationToken);
+        if (await reader.ReadAsync(cancellationToken))
         {
             var name = reader.IsDBNull(reader.GetOrdinal("name")) ? string.Empty : reader.GetString(reader.GetOrdinal("name"));
             var waveDateText = reader.GetString(reader.GetOrdinal("wavedate"));
@@ -62,11 +73,22 @@ public class SqliteWaveRepository : IWaveRepository
         }
         return null;
     }
-
-    public async Task UpsertAsync(Wave wave, CancellationToken ct = default)
+    /// <summary>
+    /// / Upserts a wave entity into the database.  
+    /// </summary>
+    /// <param name="wave"></param>
+    /// <param name="cancellationToken"></param>
+    /// <returns></returns>
+    public async Task UpsertAsync(Wave wave, CancellationToken cancellationToken = default)
     {
         using var connection = _factory.Create();
-        await connection.OpenAsync(ct);
+        await connection.OpenAsync(cancellationToken);
+
+        // Ensure a non-empty Id for inserts/updates
+        if (wave.Id == Guid.Empty)
+        {
+            wave.Id = Guid.NewGuid();
+        }
 
         // Try update first, then insert if no rows affected
         using var update = connection.CreateCommand();
@@ -74,7 +96,7 @@ public class SqliteWaveRepository : IWaveRepository
         update.Parameters.AddWithValue("$id", wave.Id);
         update.Parameters.AddWithValue("$name", wave.Name ?? string.Empty);
         update.Parameters.AddWithValue("$wavedate", wave.WaveDate.ToString("yyyy-MM-dd HH:mm:ss.fffffff", CultureInfo.InvariantCulture));
-        var updated = await update.ExecuteNonQueryAsync(ct);
+        var updated = await update.ExecuteNonQueryAsync(cancellationToken);
 
         if (updated == 0)
         {
@@ -83,7 +105,7 @@ public class SqliteWaveRepository : IWaveRepository
             insert.Parameters.AddWithValue("$id", wave.Id);
             insert.Parameters.AddWithValue("$name", wave.Name ?? string.Empty);
             insert.Parameters.AddWithValue("$wavedate", wave.WaveDate.ToString("yyyy-MM-dd HH:mm:ss.fffffff", CultureInfo.InvariantCulture));
-            await insert.ExecuteNonQueryAsync(ct);
+            await insert.ExecuteNonQueryAsync(cancellationToken);
         }
     }
 }

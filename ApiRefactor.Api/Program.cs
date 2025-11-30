@@ -5,8 +5,6 @@ using ApiRefactor.Application;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 
 // Connection string points to App_Data in the API project output directory
 var connectionString = "Data Source=App_Data/waves.db";
@@ -25,16 +23,12 @@ builder.Services.AddScoped<IWaveService, WaveService>();
 
 var app = builder.Build();
 
-
 // Global exception handling
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 app.UseSwagger();
+
 app.UseSwaggerUI();
-
-
-
-
 
 app.UseHttpsRedirection();
 
