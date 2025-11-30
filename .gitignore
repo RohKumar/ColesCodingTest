@@ -6,3 +6,5 @@
 /ApiRefactor.Application/bin/Debug/net9.0
 /ApiRefactor.Domain/bin/Debug/net9.0
 /ApiRefactor.Infrastructure/bin/Debug/net9.0
+/ApiRefactor.Tests/bin/Debug/net9.0
+/ApiRefactor.Api/bin/Debug/net9.0

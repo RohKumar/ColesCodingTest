@@ -1,15 +1,16 @@
 using ApiRefactor.Application;
 using ApiRefactor.Domain;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ApiRefactor.Api.Controllers;
-
 
 [ApiController]
 [Route("api/[controller]")]
 /// <summary>
 /// Controller for managing wave entities.
 /// </summary>
+[Authorize]
 public class WaveController : ControllerBase
 {
     private readonly IWaveService _service;
@@ -20,6 +21,7 @@ public class WaveController : ControllerBase
     /// <param name="ct"></param>
     /// <returns></returns>
     [HttpGet]
+    [Authorize]
     [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Waves))]
     public async Task<ActionResult<Waves>> GetAll(CancellationToken ct)
     {
@@ -32,6 +34,7 @@ public class WaveController : ControllerBase
     /// <param name="id"></param>
     /// <param name="ct"></param>
     /// <returns></returns>
+    [Authorize]
     [HttpGet("{id:guid}")]
     public async Task<ActionResult<Wave>> GetById(Guid id, CancellationToken ct)
     {
@@ -44,6 +47,7 @@ public class WaveController : ControllerBase
     /// <param name="wave"></param>
     /// <param name="ct"></param>
     /// <returns></returns>
+    [Authorize]
     [HttpPost]
     public async Task<IActionResult> Upsert([FromBody] Wave wave, CancellationToken ct)
     {

@@ -1,15 +1,15 @@
 [
   {
-    "ContainingType": "ApiRefactor.Api.Controllers.WavesController",
+    "ContainingType": "ApiRefactor.Api.Controllers.WaveController",
     "Method": "GetAll",
-    "RelativePath": "api/Waves",
+    "RelativePath": "api/Wave",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[ApiRefactor.Domain.Wave, ApiRefactor.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "ApiRefactor.Domain.Waves",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -20,9 +20,9 @@
     ]
   },
   {
-    "ContainingType": "ApiRefactor.Api.Controllers.WavesController",
+    "ContainingType": "ApiRefactor.Api.Controllers.WaveController",
     "Method": "Upsert",
-    "RelativePath": "api/Waves",
+    "RelativePath": "api/Wave",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -36,9 +36,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ApiRefactor.Api.Controllers.WavesController",
+    "ContainingType": "ApiRefactor.Api.Controllers.WaveController",
     "Method": "GetById",
-    "RelativePath": "api/Waves/{id}",
+    "RelativePath": "api/Wave/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -60,5 +60,21 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "ApiRefactor.Api.Controllers.AuthController",
+    "Method": "Token",
+    "RelativePath": "auth/token",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ApiRefactor.Api.Controllers.AuthController\u002BLoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
