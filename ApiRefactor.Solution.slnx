@@ -3,6 +3,7 @@
   <Folder Name="/Build/scripts/" />
   <Folder Name="/Docs/">
     <File Path="Note.txt" />
+    <File Path="README.md" />
   </Folder>
   <Folder Name="/Docs/architecture-diagrams/" />
   <Folder Name="/src/">
